@@ -1,0 +1,288 @@
+*{
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #ddd;
+    height: 1000px;
+}
+:root{
+    --main-color: white;
+    --second-color: #6d4bea;
+    --second-alt-color: #5b3ccc;
+    --transition: 0.3s;
+}
+p{
+    margin: 0 !important;
+}
+a{
+    text-decoration: none !important;
+}
+form{
+    background: #ddd;
+}
+input{
+    border: none;
+    outline: none;
+    width: 100%;
+    caret-color: var(--second-color);
+}
+/* Start Section */
+    /* Start Aside */
+section aside .mobile_aside{
+    padding: 5px 0;
+}
+section aside .links_mobile_container a{
+    padding: 12px 0;
+    position: relative;
+    z-index: 1;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+section aside .links a{
+    position: relative;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+section aside .links a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--second-color);
+    height: 100%;
+    width: 8px;
+    opacity: 0;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+} 
+section aside .links a.active::after{
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 27px;
+    width: 8px;
+    height: 8px;
+    background: red;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+section aside .links a:first-of-type::before{
+    border-top-left-radius: 0.5rem;
+}
+section aside .links a:last-of-type::before{
+    border-bottom-left-radius: 0.5rem;
+}
+section aside .links a:hover{
+    background: #ddd !important;
+}
+section aside .links a:hover::before{
+    opacity: 1;
+}
+section aside .links_mobile_container a::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    background: var(--second-alt-color);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+section aside .links_mobile_container a:hover::before{
+    width: 100%;
+}
+section aside .links a p{
+    font-weight: 800;
+    color: black;
+}
+@media (max-width: 767px) {
+    section .links a p{
+        display: none;
+    }
+}
+section aside .links a svg{
+    margin-left: 10px;
+}
+section aside .links a svg,
+section aside .links a p{
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+section aside .links a:hover svg,
+section aside .links a:hover p{
+    color: var(--second-alt-color) !important;
+}
+section aside .links_mobile_container a:hover svg{
+    color: white !important;
+}
+section aside .arrow[aria-expanded="true"]{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+    /* End Aside */
+    /* Start Field */
+        /* Start Story */
+.field .story_container .story{
+    background: var(--i);
+    background-position: center;
+    background-size: cover;
+    width: 80px;
+    height: 140px;
+    cursor: pointer;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.field .story_container .story:hover{
+    opacity: 0.7;
+}
+.field .story_container .story .account{
+    background: var(--i);
+    background-position: top;
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    border: 3px solid var(--second-color);
+}
+        /* End Story */
+        /* Start Post */
+.post_container .post .name > div{
+    width: 45px;
+    height: 45px;
+}
+.post_container .post .like{
+    margin-bottom: 0.25rem;
+}
+.post_container .post .icons svg{
+    font-size: 18px;
+}
+.post_container .post .icons + svg{
+    font-size: 18px;
+}
+.post_container .post .name p span{
+    font-size: 10px;
+    margin-top: 3px;
+}
+.post_container .post .comment img{
+    width: 22px;
+    height: 22px;
+    border: 3px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.post_container .post .comment img:not(:first-child){
+    margin-left: -10px;
+}
+.post_container .post .comment p{
+    font-size: 12px;
+}
+        /* End Post */
+    /* End Field */
+    /* Start Left Section */
+        /* Start Messages */
+.left_section .message_container .account{
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+.left_section .message_container .account::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    background: var(--second-alt-color);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.left_section .message_container .account:hover::before{
+    width: 100%;
+}
+.message_container .account.active::after{
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 32px;
+    background: green;
+    padding: 4px;
+    border: 2px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.left_section .message_container .account img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.left_section .message_container .account p{
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.left_section .message_container .account:hover p{
+    color: white !important;
+}
+.left_section .messages .head p{
+    font-size: 14px;
+}
+@media (max-width: 991px) {
+    .left_section .messages .head p{
+        font-size: 12px;
+    }
+}
+        /* End Messages */
+        /* Start Requests */
+.left_section .requests_container .request img{
+    width: 35px;
+    height: 35px;
+}
+        /* End Requests */
+    /* End Left Section */
+/* End Section */
+/* Start Footer */
+footer img{
+    width: 65px;
+}
+/* End Footer */

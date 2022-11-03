@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Icons links -->
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+        <!-- Font Links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- ------------- -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="style css/all.min.css">
+        <link rel="stylesheet" href="style css/framework.css">
+        <link rel="stylesheet" href="style css/main.css">
+    <title>ArbSocial</title>
+</head>
+<body>
+    <!-- Start Header -->
+    <header class="bg-light sticky-top">
+            <div class="container-fluid px-md-5">
+            <nav class="navbar navbar-expand-lg">
+                <div class="row w-100 d-flex align-items-center">
+                    <div class="col-3 col-md-3">
+                        <h1 class="navbar-brand fw-bold fs-4">ArbSocial</h1>
+                    </div>
+
+                    <div class="col-4 col-md-6">
+                        <div class="d-flex justify-content-center">
+                            <i class="fa-solid fa-magnifying-glass text-secondary d-none block_mobile"></i>
+                        </div>
+                        <form class="d-flex align-items-center rounded-pill ps-3 hide_mobile">
+                            <i class="fa-solid fa-magnifying-glass me-1 text-secondary"></i>
+                            <input type="search" 
+                                placeholder="Search For Creators, Inpiration and Projects"
+                                class="p-2 bg-transparent">
+                        </form>
+                    </div>
+
+                    <div class="col-5 col-md-3 d-flex align-items-center justify-content-end">
+                        <button type="submit" class="btn rounded-pill text-light bg_second main_btn">Creat</button>
+                        <div class="rounded-circle profile_img ms-2" style="--i:url(../img/me.jpeg)"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Section -->
+    <section>
+        <div class="container-fluid mt-3">
+            <div class="row d-flex justify-content-center">
+        <!-- Start Aside -->
+                <aside class="col-lg-2 col-md-4 col-sm-2">
+                    <div class="d-flex align-items-center px-1 py-2 rounded-pill user_name bg_main hide_mobile">
+                        <div class="rounded-circle profile_img mx-2" style="--i:url(../img/me.jpeg)"></div>
+                        <div class="name">
+                            <p class="fw-bold mb-1 fs-5">Omar Ibrahim</p>
+                            <p class="text-secondary">@omaribr</p>
+                        </div>
+                    </div>
+
+                    <div class="links my-3 rounded-3 bg_main hide_mobile">
+                            <a href="#" class="d-flex align-items-center mb-3
+                                px-md-2 py-md-4 p-sm-3">
+                                <i class="fa-solid fa-house d-block me-3 text-secondary"></i>
+                                <p>Home</p>
+                            </a>
+                            <a href="#" class="d-flex align-items-center mb-3
+                                px-md-2 pb-md-4 p-sm-3">
+                                <i class="fa-solid fa-compass d-block me-3 text-secondary"></i>
+                                <p>Explore</p>
+                            </a>
+                            <a href="#" class="d-flex align-items-center mb-3 
+                                position-relative px-md-2 pb-md-4 p-sm-3 active">
+                                <i class="fa-solid fa-bell d-block me-3 text-secondary "></i>
+                                <p>Notifications</p>
+                            </a>
+                            <a href="#" class="d-flex align-items-center mb-3 
+                                position-relative px-md-2 pb-md-4 p-sm-3 active">
+                                <i class="fa-solid fa-envelope d-block me-3 text-secondary"></i>
+                                <p>Messages</p>
+                            </a>
+                            <a href="#" class="d-flex align-items-center mb-3 
+                                px-md-2 pb-md-4 p-sm-3">
+                                <i class="fa-solid fa-bookmark d-block me-3 text-secondary"></i>
+                                <p>Bookmarks</p>
+                            </a>
+                            <a href="#" class="d-flex align-items-center mb-3 
+                                px-md-2 pb-md-4 p-sm-3">
+                                <i class="fa-solid fa-arrow-trend-up d-block me-3 text-secondary"></i>
+                                <p>Analytics</p>
+                            </a>
+                            <a href="#" class="d-flex align-items-center mb-3 
+                                px-md-2 pb-md-4 p-sm-3">
+                                <i class="fa-solid fa-palette d-block me-3 text-secondary"></i>
+                                <p>Themes</p>
+                            </a>
+                            <a href="#" class="d-flex align-items-center 
+                                px-md-2 pb-md-4 p-sm-3">
+                                <i class="fa-solid fa-gear d-block me-3 text-secondary"></i>
+                                <p>Settings</p>
+                            </a>
+                    </div>
+                    <button type="submit" class="btn rounded-pill 
+                        text-light w-100 bg_second main_btn hide_mobile">Creat Post</button>
+                    <!-- Mobile -->
+                    <div class="mobile_container">
+                    <!-- Mobile Aside -->
+                    <div class="col col-sm-10 d-none rounded-3 mb-4 
+                    block_mobile links_mobile_container bg_main mobile_aside">
+                    <a href="#" class=" center_flex mb-2">
+                        <i class="fa-solid fa-house text-secondary ms-0"></i>
+                    </a>
+
+                    <div class="links_mobile p-md-4 p-sm-1 my-2 rounded-3 w-100 collapse bg_main"
+                        id="links">
+                        <a href="#" class="center_flex mb-2">
+                            <i class="fa-solid fa-compass d-block text-secondary"></i>
+                        </a>
+                        <a href="#" class="center_flex mb-2">
+                            <i class="fa-solid fa-bell d-block text-secondary"></i>
+                        </a>
+                        <a href="#" class="center_flex mb-2">
+                            <i class="fa-solid fa-envelope d-block text-secondary"></i>
+                        </a>
+                        <a href="#" class="center_flex mb-2">
+                            <i class="fa-solid fa-bookmark d-block text-secondary"></i>
+                        </a>
+                        <a href="#" class="center_flex mb-2">
+                            <i class="fa-solid fa-arrow-trend-up d-block text-secondary"></i>
+                        </a>
+                        <a href="#" class="center_flex mb-2">
+                            <i class="fa-solid fa-palette d-block text-secondary"></i>
+                        </a>
+                        <a href="#" class="center_flex">
+                            <i class="fa-solid fa-gear d-block text-secondary"></i>
+                        </a>
+                    <!-- Mobile Button -->
+                        <button type="submit" class="btn rounded-pill text-center w-100 
+                        d-md-none d-sm-block fw-bold txt_second main_btn">Post</button>
+                    </div>
+                    <!-- Mobile Button -->
+                    <div class="center_flex rounded-circle arrow"
+                    data-bs-toggle="collapse" data-bs-target="#links" aria-expanded="false">
+                    <i class="fa-solid fa-angles-down text-secondary p-1"></i>
+                </div>
+                </div>
+                <!-- Mobile Aside -->
+                    </div>
+                <!-- Mobile -->
+                </aside>
+        <!-- End Aside -->
+
+        <!-- Start Field -->
+                <div class="col-lg-6 col-md-8 col-sm-9 field">
+            <!-- Start Story -->
+                    <div class="story_container d-flex">
+                        <div class="rounded-3 d-flex justify-content-between align-items-center 
+                            flex-column me-2 py-2 story" 
+                            style="--i:url(../img/story/1.jpg)">
+                            <div class="rounded-circle account" 
+                                style="--i:url(../img/me.jpeg)"></div>
+                                <p class="text-light fw-bold fs_13">Your Story</p>
+                        </div>
+
+                        <div class="rounded-3 d-flex justify-content-between align-items-center 
+                            flex-column me-2 py-2 story" 
+                            style="--i:url(../img/story/2.jpg)">
+                            <div class="rounded-circle account" 
+                                style="--i:url(../img/an2.jpg)"></div>
+                                <p class="text-light fw-bold fs_13">Lana James</p>
+                        </div>
+
+                        <div class="rounded-3 d-flex justify-content-between align-items-center 
+                            flex-column me-2 py-2 story" 
+                            style="--i:url(../img/story/3.jpg)">
+                            <div class="rounded-circle account" 
+                                style="--i:url(../img/an3.jpg)"></div>
+                                <p class="text-light fw-bold fs_13">Jane Doe</p>
+                        </div>
+
+                        <div class="rounded-3 d-flex justify-content-between align-items-center 
+                            flex-column me-2 py-2 story" 
+                            style="--i:url(../img/story/4.jpg)">
+                            <div class="rounded-circle account" 
+                                style="--i:url(../img/an5.jpg)"></div>
+                                <p class="text-light fw-bold fs_13">Winne Hale</p>
+                        </div>
+
+                        <div class="rounded-3 d-flex justify-content-between align-items-center 
+                            flex-column me-2 py-2 story" 
+                            style="--i:url(../img/story/5.jpg)">
+                            <div class="rounded-circle account" 
+                                style="--i:url(../img/an15.jpg)"></div>
+                                <p class="text-light fw-bold fs_13">Daniel Bale</p>
+                        </div>
+
+                        <div class="rounded-3 d-flex justify-content-between align-items-center 
+                            flex-column me-2 py-2 story" 
+                            style="--i:url(../img/story/6.jpg)">
+                            <div class="rounded-circle account" 
+                                style="--i:url(../img/an1.jpg)"></div>
+                                <p class="text-light fw-bold fs_13">The white</p>
+                        </div>
+
+                        <div class="rounded-3 d-flex justify-content-between align-items-center 
+                            flex-column py-2 story" 
+                            style="--i:url(../img/story/7.jpg)">
+                            <div class="rounded-circle account" 
+                                style="--i:url(../img/images30.jpg)"></div>
+                                <p class="text-light fw-bold fs_13">Edem Quist</p>
+                        </div>
+                    </div>
+            <!-- End Story -->
+
+            <!-- Start News -->
+                    <div class="news my-3">
+                        <form class="d-flex align-items-center rounded-pill px-3 bg_main">
+                            <div class="rounded-circle profile_img" style="--i:url(../img/me.jpeg)"></div>
+                            <input type="search" 
+                                placeholder="What's on your mind, Omar?"
+                                class="p-3 bg-transparent">
+                                <button type="submit" class="btn rounded-pill 
+                                text-light bg_second main_btn">Post</button>
+                        </form>
+                    </div>
+            <!-- End News -->
+
+            <!-- Start Post -->
+                    <div class="post_container">
+                        <div class="post bg_main p-3 rounded-3 mb-2">
+                            <div class="d-flex justify-content-between account">
+                                    <div class="name d-flex align-items-center">
+                                        <div class="rounded-circle me-2 profile_img" 
+                                        style="--i:url(../img/images50.jpg)"></div>
+                                        <p class="fw-bold text-capitalize d-flex flex-column">
+                                            lana rose
+                                            <span class="text-secondary fw-normal">
+                                                South Pole, 20 Hours Ago
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <span class="fw-bold fs-6">...</span>
+                            </div>
+
+                            <img src="img/post/post1.jpg" alt="..." class="img-fluid my-2 rounded-3 w-100">
+
+                            <div class="bottom_post mt-1">
+                                <div class="like d-flex justify-content-between align-items-center">
+                                    <div class="icons">
+                                        <i class="fa-solid fa-heart text-danger"></i>
+                                        <i class="fa-regular fa-comment mx-1"></i>
+                                        <i class="fa-solid fa-share"></i>
+                                    </div>
+                                    <i class="fa-solid fa-bookmark"></i>
+                                </div>
+
+                                <div class="comment">
+                                    <div class="account d-flex align-items-center">
+                                        <img src="img/an1.jpg" alt="..." class="img-fluid">
+                                        <img src="img/an2.jpg" alt="..." class="img-fluid">
+                                        <img src="img/an3.jpg" alt="..." class="img-fluid">
+                                        <p class="fw-normal">
+                                            Liked by <span class="fw-bold">Emest Achiever</span>
+                                            and <span class="fw-bold">2,323 others</span>
+                                        </p>
+                                    </div>
+                                    <p>
+                                        <span class="fw-bold">Jane Doe</span>
+                                        Lorem ipsum dolor sit, amet consectetur. #Nature
+                                        #Beautiful_destination
+                                    </p>
+                                    <p class="text-secondary mt-1">
+                                        View all 277 Comments
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post bg_main p-3 rounded-3 mb-2">
+                            <div class="d-flex justify-content-between account">
+                                    <div class="name d-flex align-items-center">
+                                        <div class="rounded-circle me-2 profile_img" 
+                                        style="--i:url(../img/images30.jpg)"></div>
+                                        <p class="fw-bold text-capitalize d-flex flex-column">
+                                            Edem Quist
+                                            <span class="text-secondary fw-normal">
+                                                Japan Streets, 1 Day Ago
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <span class="fw-bold fs-6">...</span>
+                            </div>
+
+                            <img src="img/post/post2.jpg" alt="..." class="img-fluid my-2 rounded-3 w-100">
+
+                            <div class="bottom_post mt-1">
+                                <div class="like d-flex justify-content-between align-items-center">
+                                    <div class="icons">
+                                        <i class="fa-solid fa-heart text-danger"></i>
+                                        <i class="fa-regular fa-comment mx-1"></i>
+                                        <i class="fa-solid fa-share"></i>
+                                    </div>
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+
+                                <div class="comment">
+                                    <div class="account d-flex align-items-center">
+                                        <img src="img/an5.jpg" alt="..." class="img-fluid">
+                                        <img src="img/an10.jpg" alt="..." class="img-fluid">
+                                        <img src="img/an15.jpg" alt="..." class="img-fluid">
+                                        <p class="fw-normal">
+                                            Liked by <span class="fw-bold">Lana Rose</span>
+                                            and <span class="fw-bold">2,000 others</span>
+                                        </p>
+                                    </div>
+                                    <p>
+                                        <span class="fw-bold">The White</span>
+                                        Lorem ipsum dolor sit, amet consectetur. #Photography 
+                                        #Beautiful_Cities
+                                    </p>
+                                    <p class="text-secondary mt-1">
+                                        View all 210 Comments
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post bg_main p-3 rounded-3 mb-2">
+                            <div class="d-flex justify-content-between account">
+                                    <div class="name d-flex align-items-center">
+                                        <div class="rounded-circle me-2 profile_img" 
+                                        style="--i:url(../img/thumb-1920-541200.jpg)"></div>
+                                        <p class="fw-bold text-capitalize d-flex flex-column">
+                                            Kaneki Kun
+                                            <span class="text-secondary fw-normal">
+                                                Amazon forest, 2 Weeks Ago
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <span class="fw-bold fs-6">...</span>
+                            </div>
+
+                            <img src="img/post/post3.jpg" alt="..." class="img-fluid my-2 rounded-3 w-100">
+
+                            <div class="bottom_post mt-1">
+                                <div class="like d-flex justify-content-between align-items-center">
+                                    <div class="icons">
+                                        <i class="fa-solid fa-heart text-danger"></i>
+                                        <i class="fa-regular fa-comment mx-1"></i>
+                                        <i class="fa-solid fa-share"></i>
+                                    </div>
+                                    <i class="fa-solid fa-bookmark"></i>
+                                </div>
+
+                                <div class="comment">
+                                    <div class="account d-flex align-items-center">
+                                        <img src="img/an1.jpg" alt="..." class="img-fluid">
+                                        <img src="img/an2.jpg" alt="..." class="img-fluid">
+                                        <img src="img/an3.jpg" alt="..." class="img-fluid">
+                                        <p class="fw-normal">
+                                            Liked by <span class="fw-bold">The White</span>
+                                            and <span class="fw-bold">500 others</span>
+                                        </p>
+                                    </div>
+                                    <p>
+                                        <span class="fw-bold">Lana Rose</span>
+                                        Lorem ipsum dolor sit, amet consectetur. #Photography #Nature
+                                    </p>
+                                    <p class="text-secondary mt-1">
+                                        View all 300 Comments
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post bg_main p-3 rounded-3 mb-2">
+                            <div class="d-flex justify-content-between account">
+                                    <div class="name d-flex align-items-center">
+                                        <div class="rounded-circle me-2 profile_img" 
+                                        style="--i:url(../img/an3.jpg)"></div>
+                                        <p class="fw-bold text-capitalize d-flex flex-column">
+                                            Jane Doe
+                                            <span class="text-secondary fw-normal">
+                                                London, 5 Weeks Ago
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <span class="fw-bold fs-6">...</span>
+                            </div>
+
+                            <img src="img/post/post4.jpeg" alt="..." class="img-fluid my-2 rounded-3 w-100">
+
+                            <div class="bottom_post mt-1">
+                                <div class="like d-flex justify-content-between align-items-center">
+                                    <div class="icons">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-regular fa-comment mx-1"></i>
+                                        <i class="fa-solid fa-share"></i>
+                                    </div>
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+
+                                <div class="comment">
+                                    <div class="account d-flex align-items-center">
+                                        <img src="img/an5.jpg" alt="..." class="img-fluid">
+                                        <img src="img/an10.jpg" alt="..." class="img-fluid">
+                                        <img src="img/an15.jpg" alt="..." class="img-fluid">
+                                        <p class="fw-normal">
+                                            Liked by <span class="fw-bold">The White</span>
+                                            and <span class="fw-bold">100 others</span>
+                                        </p>
+                                    </div>
+                                    <p>
+                                        <span class="fw-bold">Emest Achiever</span>
+                                        Lorem ipsum dolor sit, amet consectetur. #Photography
+                                    </p>
+                                    <p class="text-secondary mt-1">
+                                        View all 50 Comments
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post bg_main p-3 rounded-3 mb-2">
+                            <div class="d-flex justify-content-between account">
+                                    <div class="name d-flex align-items-center">
+                                        <div class="rounded-circle me-2 profile_img" 
+                                        style="--i:url(../img/CD.png)"></div>
+                                        <p class="fw-bold text-capitalize d-flex flex-column">
+                                            Khidr Karawita
+                                            <span class="text-secondary fw-normal">
+                                                Alps mountain, 10 Weeks Ago
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <span class="fw-bold fs-6">...</span>
+                            </div>
+
+                            <img src="img/post/post5.jpg" alt="..." class="img-fluid my-2 rounded-3 w-100">
+
+                            <div class="bottom_post mt-1">
+                                <div class="like d-flex justify-content-between align-items-center">
+                                    <div class="icons">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-regular fa-comment mx-1"></i>
+                                        <i class="fa-solid fa-share"></i>
+                                    </div>
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+
+                                <div class="comment">
+                                    <div class="account d-flex align-items-center">
+                                        <img src="img/an1.jpg" alt="..." class="img-fluid">
+                                        <img src="img/an2.jpg" alt="..." class="img-fluid">
+                                        <img src="img/an3.jpg" alt="..." class="img-fluid">
+                                        <p class="fw-normal">
+                                            Liked by <span class="fw-bold">The White</span>
+                                            and <span class="fw-bold">100 others</span>
+                                        </p>
+                                    </div>
+                                    <p>
+                                        <span class="fw-bold">Emest Achiever</span>
+                                        Lorem ipsum dolor sit, amet consectetur. #Photography
+                                    </p>
+                                    <p class="text-secondary mt-1">
+                                        View all 50 Comments
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            <!-- End Post -->
+                </div>
+        <!-- End Field -->
+
+        <!-- Start Left Section -->
+                <div class="col-lg-3 hide_mobile hide_mid left_section">
+            <!-- Start Messages -->
+                    <div class="messages bg-light rounded-3 p-3">
+                        <div class="title d-flex align-items-center justify-content-between">
+                            <p class="fw-bolder">Messages</p>
+                            <i class="fa-solid fa-pen"></i>
+                        </div>
+
+                        <form class="d-flex align-items-center rounded-pill ps-3 my-4">
+                            <i class="fa-solid fa-magnifying-glass me-1 text-secondary"></i>
+                            <input type="search" 
+                                placeholder="Search Messages"
+                                class="p-2 bg-transparent">
+                        </form>
+
+                        <div class="head d-flex align-items-center justify-content-between
+                            border-bottom border-secondary p-1">
+                            <p class="fw-bold">Primary</p>
+                            <p class="fw-bold">General</p>
+                            <p class="fw-bold txt_second">Requests(7)</p>
+                        </div>
+
+                        <div class="message_container">
+                            <div class="account d-flex align-items-center my-4 p-1">
+                                <img src="img/images30.jpg" alt="..." class="img-fluid mx-1">
+                                <div class="message">
+                                    <p class="fw-bold">Edem Quist</p>
+                                    <p class="text-secondary pt-1 fs_13">Just Wake Up</p>
+                                </div>
+                            </div>
+
+                            <div class="account d-flex align-items-center my-4 p-1">
+                                <img src="img/an3.jpg" alt="..." class="img-fluid mx-1">
+                                <div class="message">
+                                    <p class="fw-bold">Jane Doe</p>
+                                    <p class="pt-1 fs_13">Bonjour</p>
+                                </div>
+                            </div>
+
+                            <div class="account d-flex align-items-center
+                                my-4 p-1 active">
+                                <img src="img/images50.jpg" alt="..." class="img-fluid mx-1">
+                                <div class="message">
+                                    <p class="fw-bold">France Delia</p>
+                                    <p class="pt-1 fs_13">Ok</p>
+                                </div>
+                            </div>
+
+                            <div class="account d-flex align-items-center my-4 p-1">
+                                <img src="img/an15.jpg" alt="..." class="img-fluid mx-1">
+                                <div class="message">
+                                    <p class="fw-bold">Daniella Jackson</p>
+                                    <p class="pt-1 fs_13">2 New Messages</p>
+                                </div>
+                            </div>
+
+                            <div class="account d-flex align-items-center mt-4 p-1">
+                                <img src="img/CD.png" alt="..." class="img-fluid mx-1">
+                                <div class="message">
+                                    <p class="fw-bold">Juliet Makarey</p>
+                                    <p class="text-secondary pt-1 fs_13">lol U right</p>
+                                </div>
+                            </div>
+
+                            <div class="account d-flex align-items-center mt-4 p-1 active">
+                                <img src="img/an2.jpg" alt="..." class="img-fluid mx-1">
+                                <div class="message">
+                                    <p class="fw-bold">Lilla James</p>
+                                    <p class="pt-1 fs_13">Birthday tomorrow!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            <!-- End Messages -->
+            <!-- Start Requests -->
+                    <p class="fw-bold text-secondary my-3">Requests</p>
+                    <div class="requests_container">
+                        <div class="request p-3 rounded-3 bg_main">
+                            <div class="d-flex align-items-center">
+                                <img src="img/request/an14.jpg" alt="" class="img-fluid me-2 rounded-circle">
+                                <div class="account">
+                                    <p class="fw-bold">Yacoub KamarEldin Debiaza</p>
+                                    <p class="text-secondary pt-1 fs_13">8 Mutual Friends</p>
+                                </div>
+                            </div>
+                            <div class="buttons mt-2">
+                                <button type="submit" class="px-3 py-2 rounded-pill 
+                                    main_btn bg_second me-1">Accept</button>
+                                <button type="submit" class="px-3 py-2 rounded-pill
+                                    main_btn bg-secondary ">Decline</button>
+                            </div>
+                        </div>
+
+                        <div class="request p-3 my-3 rounded-3 bg_main">
+                            <div class="d-flex align-items-center">
+                                <img src="img/request/an6.jpg" alt="" class="img-fluid me-2 rounded-circle">
+                                <div class="account">
+                                    <p class="fw-bold">Jackline Mensah</p>
+                                    <p class="text-secondary pt-1 fs_13">5 Mutual Friends</p>
+                                </div>
+                            </div>
+                            <div class="buttons mt-2">
+                                <button type="submit" class="px-3 py-2 rounded-pill 
+                                    main_btn bg_second me-1">Accept</button>
+                                <button type="submit" class="px-3 py-2 rounded-pill
+                                    main_btn bg-secondary ">Decline</button>
+                            </div>
+                        </div>
+
+                        <div class="request p-3 rounded-3 bg_main">
+                            <div class="d-flex align-items-center">
+                                <img src="img/request/an9.jpg" alt="" class="img-fluid me-2 rounded-circle">
+                                <div class="account">
+                                    <p class="fw-bold">Mohamed Sonbol</p>
+                                    <p class="text-secondary pt-1 fs_13">12 Mutual Friends</p>
+                                </div>
+                            </div>
+                            <div class="buttons mt-2">
+                                <button type="submit" class="px-3 py-2 rounded-pill 
+                                    main_btn bg_second me-1">Accept</button>
+                                <button type="submit" class="px-3 py-2 rounded-pill
+                                    main_btn bg-secondary ">Decline</button>
+                            </div>
+                        </div>
+                    </div>
+            <!-- End Requests -->
+                </div>
+        <!-- End Left Section -->
+            </div>
+        </div>
+    </section>
+    <!-- End Section -->
+    <!-- Start Footer -->
+    <footer class="p-3 bg_second txt-light d-flex justify-content-center align-items-center">
+        <img src="img/Logo/omar-circle-close-M-black 2.png" alt="OMAR LOGO" class="img-fluid">
+        <p class="text-light fs-6 ms-2">Made by OMAR IBRAHIM! <span class="text-danger">♥</span></p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d30005137f.js" crossorigin="anonymous"></script>
+    <script src="js/all.min.js"></script>
+</body>
+</html>
