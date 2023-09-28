@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ArabSocial</title>
+</head>
+<body>
+    <div id="logoBg">
+        <button type="button" class="hideLogoBtn showLogo rounded-pill py-1 mt-3 ml-3 main-btn">Hide Logo</button>
+    </div>
+
+    <header class="mainBg position-fixed">
+    <div class="container flex-between">
+            <a href="#"><h3 class="logo text-dark">ArabSocial</h3></a>
+
+            <div class="search rounded-pill flex-center search-padding">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" id="search"
+                placeholder="Search for Creators, Insperations, and Projects">
+            </div>
+
+            <div class="create flex-between">
+                <button type="button" class="rounded-pill main-btn hide-mobile">Create</button>
+
+                <div class="dropdown col-lg-3 col-md-4 hide block-mobile">
+                    <div class="bars position-relative">
+                        <span></span>
+                        <span id="click"></span>
+                        <span></span>
+                    </div>
+
+                    <div class="links mainBg rad-15 hide">
+                        <a href="#" class="align-center active">
+                            <i class="fa-solid fa-house secondTxtColor"></i>
+                            <p>Home</p>
+                    </a>
+        
+                        <a href="#" class="align-center">
+                            <i class="fa-solid fa-compass secondTxtColor"></i>
+                            <p>Explore</p>
+                    </a>
+        
+                        <a href="#" class="align-center notifications">
+                            <i class="fa-solid fa-bell secondTxtColor "></i>
+                            <p>Notifications</p>
+                    </a>
+
+                        <a href="#" class="align-center messages">
+                            <i class="fa-solid fa-envelope secondTxtColor"></i>
+                            <p>Messages</p>
+                    </a>
+
+                    <a href="#" class="align-center requests position-relative">
+                        <i class="fa-solid fa-user secondTxtColor"></i>
+                        <p>Requests</p>
+                    </a>
+        
+                        <a href="#" class="align-center">
+                            <i class="fa-solid fa-bookmark secondTxtColor"></i>
+                            <p>Bookmarks</p>
+                    </a>
+        
+                        <a href="#" class="align-center">
+                            <i class="fa-solid fa-arrow-trend-up secondTxtColor"></i>
+                            <p>Analytics</p>
+                    </a>
+        
+                        <a href="#" class="align-center">
+                            <i class="fa-solid fa-palette secondTxtColor"></i>
+                            <p>Themes</p>
+                    </a>
+        
+                        <a href="#" class="align-center">
+                            <i class="fa-solid fa-gear secondTxtColor"></i>
+                            <p>Settings</p>
+                    </a>
+
+                    <a href="#" class="align-center showLogoBtn">
+                        <i class="fa-solid fa-font-awesome secondTxtColor"></i>
+                        <p>Show Logo</p>
+                    </a>
+                    </div>
+                </div>
+
+                <img src="imgs/me.jpg" alt="profile-img" class="profile-img">
+            </div>
+        </div>
+    </header>
+    <!-- -------------------------------------- -->
+    <section class="container">
+        <!-- Start Aside -->
+        <aside class="col-lg-3 col-md-3 hide-mobile">
+            <div class=" p-sm-2 rounded-pill profile-name mainBg align-center">
+                <img src="imgs/me.jpg" alt="profile-img" class="m-sm-0 profile-img">
+                <div class="name">
+                    <p>Omar Ibrahim</p>
+                    <p class="secondTxtColor">@omaribrahim</p>
+                </div>
+            </div>
+
+            <div class="links mainBg rad-15">
+                <a href="#" class="align-center active">
+                    <i class="fa-solid fa-house secondTxtColor"></i>
+                    <p>Home</p>
+            </a>
+
+                <a href="#" class="align-center">
+                    <i class="fa-solid fa-compass secondTxtColor"></i>
+                    <p>Explore</p>
+            </a>
+
+                <a href="#" class="align-center notifications">
+                    <i class="fa-solid fa-bell secondTxtColor "></i>
+                    <p>Notifications</p>
+            </a>
+
+                <a href="#" class="align-center messages">
+                    <i class="fa-solid fa-envelope secondTxtColor"></i>
+                    <p>Messages</p>
+            </a>
+
+                <a href="#" class="align-center">
+                    <i class="fa-solid fa-bookmark secondTxtColor"></i>
+                    <p>Bookmarks</p>
+            </a>
+
+                <a href="#" class="align-center">
+                    <i class="fa-solid fa-arrow-trend-up secondTxtColor"></i>
+                    <p>Analytics</p>
+            </a>
+
+                <a href="#" class="align-center">
+                    <i class="fa-solid fa-palette secondTxtColor"></i>
+                    <p>Themes</p>
+            </a>
+
+                <a href="#" class="align-center">
+                    <i class="fa-solid fa-gear secondTxtColor"></i>
+                    <p>Settings</p>
+            </a>
+            </div>
+            <button type="button" class="mb-2 rounded-pill w-100 py-1 main-btn hide-mid">Create</button>
+            <button type="button" class="showLogoBtn rounded-pill w-100 py-1 main-btn">Show Logo</button>
+        </aside>
+        <!-- End Aside -->
+
+        <!-- Start Field -->
+        <div class="col-lg-6 col-md-8 mid-section">
+            <div class="stories flex-between">
+                <div class="story py-1 flex-between rad-15" 
+                style="--i:url(../imgs/story/1.jpg);">
+                    <img src="imgs/me.jpg" alt="img">
+                    <p>Your story</p>
+                </div>
+
+                <div class="story py-1 flex-between rad-15" 
+                style="--i:url(../imgs/story/2.jpg);">
+                    <img src="imgs/an1.jpg" alt="img">
+                    <p>Lilla James</p>
+                </div>
+
+                <div class="story py-1 flex-between rad-15" 
+                style="--i:url(../imgs/story/3.jpg);">
+                    <img src="imgs/an2.jpg" alt="img">
+                    <p>Winnie Hale</p>
+                </div>
+
+                <div class="story py-1 flex-between rad-15" 
+                style="--i:url(../imgs/story/4.jpg);">
+                    <img src="imgs/an3.jpg" alt="img">
+                    <p>Daniel Bale</p>
+                </div>
+
+                <div class="story py-1 flex-between rad-15" 
+                style="--i:url(../imgs/story/5.jpg);">
+                    <img src="imgs/an5.jpg" alt="img">
+                    <p>Jane Doe</p>
+                </div>
+
+                <div class="story mr-0 py-1 flex-between rad-15" 
+                style="--i:url(../imgs/story/6.jpg);">
+                    <img src="imgs/an10.jpg" alt="img">
+                    <p>
+                        The White</p>
+                </div>
+            </div>
+
+            <div class="create-post align-center search-padding my-2">
+                <img src="imgs/me.jpg" alt="profile-img" class="profile-img">
+                <input type="text" name="text" id="text" placeholder="What's in your mind, Omar?">
+                <button type="button" class="rounded-pill main-btn">Post</button>
+            </div>
+
+            <div class="posts">
+                <div class="post mainBg rad-15">
+                    <div class="profile align-center">
+                        <img src="imgs/images50.jpg" alt="profile-img" class="mr-3 mr-sm-2 profile-img">
+                        <div class="name">
+                            <p>Lana Rose</p>
+                            <p class="secondTxtColor">@larose</p>
+                        </div>
+                    </div>
+                    <div class="post-img position-relative">
+                        <img src="imgs/post/post2.jpg" alt="post" class="rad-15 my-2">
+                    </div>
+
+                    <div class="icons flex-between">
+                        <div>
+                            <div class="d-inline-block likeIcons">
+                                <span class="block">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+                            </div>
+                            <i class="fa-solid fa-comments"></i>
+                            <i class="fa-solid fa-share"></i>
+                        </div>
+
+                        <div class="d-inline-block markIcons">
+                            <span>
+                                <i class="fa-regular fa-bookmark"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="liked align-center">
+                        <div class="mr-2">
+                        <img src="imgs/an15.jpg" alt="img">
+                        <img src="imgs/images30.jpg" alt="img">
+                        <img src="imgs/images50.jpg" alt="img">
+                        </div>
+                        <p>
+                            Liked by
+                            <span>Emest Achiever</span> and
+                            <span>2.323 others</span>
+                        </p>
+                    </div>
+                    <div class="comment">
+                        <p>
+                            <span>Lana Rose</span>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <p class="secondTxtColor">View all 277 comments</p>
+                    </div>
+                </div>
+
+                <div class="post mainBg rad-15">
+                    <div class="profile align-center">
+                        <img src="imgs/CD.png" alt="profile-img" class="mr-3 mr-sm-2 profile-img">
+                        <div class="name">
+                            <p>Edem Quist</p>
+                            <p class="secondTxtColor">@Equist</p>
+                        </div>
+                    </div>
+                    <div class="post-img position-relative">
+                        <img src="imgs/post/post3.jpg" alt="post" class="rad-15 my-2">
+                    </div>
+                    <div class="icons flex-between">
+                        <div>
+                            <div class="d-inline-block likeIcons">
+                                <span class="block">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+                                <span class="love hide">
+                                    <i class="fa-solid fa-heart" style="color: red"></i>
+                                </span>
+                            </div>
+                            <i class="fa-solid fa-comments"></i>
+                            <i class="fa-solid fa-share"></i>
+                        </div>
+
+                        <div class="d-inline-block markIcons">
+                            <span class="block">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </span>
+                            <span class="love hide">
+                                <i class="fa-solid fa-bookmark" style="color: black"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="liked align-center">
+                        <div class="mr-2">
+                        <img src="imgs/an15.jpg" alt="img">
+                        <img src="imgs/images30.jpg" alt="img">
+                        <img src="imgs/images50.jpg" alt="img">
+                        </div>
+                        <p>
+                            Liked by
+                            <span>Emest Achiever</span> and
+                            <span>2.323 others</span>
+                        </p>
+                    </div>
+                    <div class="comment">
+                        <p>
+                            <span>Lana Rose</span>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <p class="secondTxtColor">View all 277 comments</p>
+                    </div>
+                </div>
+
+                <div class="post mainBg rad-15">
+                    <div class="profile align-center">
+                        <img src="imgs/me.jpg" alt="profile-img" class="mr-3 mr-sm-2 profile-img">
+                        <div class="name">
+                            <p>Omar Ibrahim</p>
+                            <p class="secondTxtColor">@omaribrahim</p>
+                        </div>
+                    </div>
+                    <div class="post-img position-relative">
+                        <img src="imgs/post/post1.jpg" alt="post" class="rad-15 my-2">
+                    </div>
+                    <div class="icons flex-between">
+                        <div>
+                            <div class="d-inline-block likeIcons">
+                                <span class="block">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+                                <span class="love hide">
+                                    <i class="fa-solid fa-heart" style="color: red"></i>
+                                </span>
+                            </div>
+                            <i class="fa-solid fa-comments"></i>
+                            <i class="fa-solid fa-share"></i>
+                        </div>
+
+                        <div class="d-inline-block markIcons">
+                            <span class="block">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </span>
+                            <span class="love hide">
+                                <i class="fa-solid fa-bookmark" style="color: black"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="liked align-center">
+                        <div class="mr-2">
+                        <img src="imgs/an15.jpg" alt="img">
+                        <img src="imgs/images30.jpg" alt="img">
+                        <img src="imgs/images50.jpg" alt="img">
+                        </div>
+                        <p>
+                            Liked by
+                            <span>Emest Achiever</span> and
+                            <span>2.323 others</span>
+                        </p>
+                    </div>
+                    <div class="comment">
+                        <p>
+                            <span>Lana Rose</span>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <p class="secondTxtColor">View all 277 comments</p>
+                    </div>
+                </div>
+
+                <div class="post mainBg rad-15">
+                    <div class="profile align-center">
+                        <img src="imgs/images30.jpg" alt="profile-img" class="mr-3 mr-sm-2 profile-img">
+                        <div class="name">
+                            <p>Juliet Makary</p>
+                            <p class="secondTxtColor">@makaryjul</p>
+                        </div>
+                    </div>
+                    <div class="post-img position-relative">
+                        <img src="imgs/post/post4.jpeg" alt="post" class="rad-15 my-2">
+                    </div>
+                    <div class="icons flex-between">
+                        <div>
+                            <div class="d-inline-block likeIcons">
+                                <span class="block">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+                                <span class="love hide">
+                                    <i class="fa-solid fa-heart" style="color: red"></i>
+                                </span>
+                            </div>
+                            <i class="fa-solid fa-comments"></i>
+                            <i class="fa-solid fa-share"></i>
+                        </div>
+
+                        <div class="d-inline-block markIcons">
+                            <span class="block">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </span>
+                            <span class="love hide">
+                                <i class="fa-solid fa-bookmark" style="color: black"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="liked align-center">
+                        <div class="mr-2">
+                        <img src="imgs/an15.jpg" alt="img">
+                        <img src="imgs/images30.jpg" alt="img">
+                        <img src="imgs/images50.jpg" alt="img">
+                        </div>
+                        <p>
+                            Liked by
+                            <span>Emest Achiever</span> and
+                            <span>2.323 others</span>
+                        </p>
+                    </div>
+                    <div class="comment">
+                        <p>
+                            <span>Lana Rose</span>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <p class="secondTxtColor">View all 277 comments</p>
+                    </div>
+                </div>
+
+                <div class="post mainBg rad-15">
+                    <div class="profile align-center">
+                        <img src="imgs/thumb-1920-541200.jpg" alt="profile-img" class="mr-3 mr-sm-2 profile-img">
+                        <div class="name">
+                            <p>The White</p>
+                            <p class="secondTxtColor">@white</p>
+                        </div>
+                    </div>
+                    <div class="post-img position-relative">
+                        <img src="imgs/post/post5.jpg" alt="post" class="rad-15 my-2">
+                    </div>
+                    <div class="icons flex-between">
+                        <div>
+                            <div class="d-inline-block likeIcons">
+                                <span class="block">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+                                <span class="love hide">
+                                    <i class="fa-solid fa-heart" style="color: red"></i>
+                                </span>
+                            </div>
+                            <i class="fa-solid fa-comments"></i>
+                            <i class="fa-solid fa-share"></i>
+                        </div>
+
+                        <div class="d-inline-block markIcons">
+                            <span class="block">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </span>
+                            <span class="mark hide">
+                                <i class="fa-solid fa-bookmark" style="color: black"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="liked align-center">
+                        <div class="mr-2">
+                        <img src="imgs/an15.jpg" alt="img">
+                        <img src="imgs/images30.jpg" alt="img">
+                        <img src="imgs/images50.jpg" alt="img">
+                        </div>
+                        <p>
+                            Liked by
+                            <span>Emest Achiever</span> and
+                            <span>2.323 others</span>
+                        </p>
+                    </div>
+                    <div class="comment">
+                        <p>
+                            <span>Lana Rose</span>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <p class="secondTxtColor">View all 277 comments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Field -->
+
+        <!-- Start Left Section -->
+        <div class="col-lg-3 p-0 right-section hide-mobile">
+            <div class="mesages p-3 mainBg rad-15">
+                <div class="title flex-between">
+                    <p class="font-weight-bold">Mesages</p>
+                    <i class="fa-regular fa-pen-to-square"></i>
+                </div>
+
+                <div class="search rounded-pill flex-center offWhiteBg p-2 my-3">
+                    <i class="fa-solid fa-magnifying-glass secondColor"></i>
+                    <input type="search" id="search"
+                    placeholder="Search Mesages">
+                </div>
+
+                <div class="head flex-between mb-3">
+                    <p class="active position-relative pb-1" data-cont=".one">Primary</p>
+                    <p class="position-relative pb-1 mx-2" data-cont=".two">General</p>
+                    <p class="secondColor position-relative pb-1">Requests(3)</p>
+                </div>
+
+                <div class="switch">
+                    <div class="one">
+                        <div class="message align-center">
+                            <img src="imgs/CD.png" alt="img" class="profile-img mr-2">
+                            <div class="name">
+                                <p class="name font-weight-bold">Edem Quist</p>
+                                <p class="secondTxtColor fs-4">Just woke up</p>
+                            </div>
+                        </div>
+
+                        <div class="message align-center">
+                            <span class="online position-relative">
+                                <img src="imgs/an15.jpg" alt="img" class="profile-img mr-2">
+                            </span>
+                            <div class="name">
+                                <p class="name font-weight-bold">France Delia</p>
+                                <p>Recieved, Thanks</p>
+                            </div>
+                        </div>
+
+                        <div class="message align-center">
+                            <img src="imgs/an10.jpg" alt="img" class="profile-img mr-2">
+                            <div class="name">
+                                <p class="name font-weight-bold">Jane Doe</p>
+                                <p>Ok</p>
+                            </div>
+                        </div>
+
+                        <div class="message align-center">
+                            <img src="imgs/images30.jpg" alt="img" class="profile-img mr-2">
+                            <div class="name">
+                                <p class="name font-weight-bold">Juliet Makary</p>
+                                <p>2 new massages</p>
+                            </div>
+                        </div>
+
+                        <div class="message align-center">
+                            <span class="online position-relative">
+                                <img src="imgs/thumb-1920-541200.jpg" alt="img" class="profile-img mr-2">
+                            </span>
+                            <div class="name">
+                                <p class="name font-weight-bold">The White</p>
+                                <p class="secondTxtColor">lol u right</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="two">
+                        <div class="general align-center">
+                            <span class="online position-relative">
+                                <img src="imgs/general/1.jpeg" alt="img" class="profile-img mr-2">
+                            </span>
+                            <div class="name">
+                                <p class="name font-weight-bold">Khaled Kashmery</p>
+                                <p class="secondTxtColor">5 mutual friends</p>
+                            </div>
+                        </div>
+
+                        <div class="general align-center">
+                            <span class="online position-relative">
+                                <img src="imgs/general/2.webp" alt="img" class="profile-img mr-2">
+                            </span>
+                            <div class="name">
+                                <p class="name font-weight-bold">Safia Siraj Zalta</p>
+                            </div>
+                        </div>
+
+                        <div class="general align-center">
+                            <span class="online position-relative">
+                                <img src="imgs/general/3.jpg" alt="img" class="profile-img mr-2">
+                            </span>
+                            <div class="name">
+                                <p class="name font-weight-bold">Kheder Karaweta</p>
+                                <p class="secondTxtColor">1 mutual friends</p>
+                            </div>
+                        </div>
+
+                        <div class="general align-center">
+                            <span class="online position-relative">
+                                <img src="imgs/general/4.webp" alt="img" class="profile-img mr-2">
+                            </span>
+                            <div class="name">
+                                <p class="name font-weight-bold">Ismail Kanabawi</p>
+                                <p class="secondTxtColor">6 mutual friends</p>
+                            </div>
+                        </div>
+
+                        <div class="general align-center">
+                            <span class="online position-relative">
+                                <img src="imgs/general/5.jpeg" alt="img" class="profile-img mr-2">
+                            </span>
+                            <div class="name">
+                                <p class="name font-weight-bold">Hassanein Afandum</p>
+                                <p class="secondTxtColor">2 mutual friends</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="requests">
+                <p class="my-2 font-weight-bold secondTxtColor">Requests</p>
+                <div class="request mainBg rad-15 p-3">
+                    <div class="profile align-center mb-2">
+                        <img src="imgs/request/an14.jpg" alt="img" class="profile-img mr-2">
+                        <div>
+                            <p class="font-weight-bold">Hajia Bintu</p>
+                            <p class="secondTxtColor fs-4">8 mutual friends</p>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="main-btn rounded-pill">Accept</button>
+                        <button type="button" class="main-btn offWhiteBg rounded-pill">Decline</button>
+                    </div>
+                </div>
+
+                <div class="request mainBg rad-15 p-3">
+                    <div class="profile align-center mb-2">
+                        <img src="imgs/request/an6.jpg" alt="img" class="profile-img mr-2">
+                        <div>
+                            <p class="font-weight-bold">Jackline Mensha</p>
+                            <p class="secondTxtColor fs-4">2 mutual friends</p>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="main-btn rounded-pill">Accept</button>
+                        <button type="button" class="main-btn offWhiteBg rounded-pill">Decline</button>
+                    </div>
+                </div>
+
+                <div class="request mainBg rad-15 p-3">
+                    <div class="profile align-center mb-2">
+                        <img src="imgs/request/an9.jpg" alt="img" class="profile-img mr-2">
+                        <div>
+                            <p class="font-weight-bold">Jennifer Lawrence</p>
+                            <p class="secondTxtColor fs-4">10 mutual friends</p>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="main-btn rounded-pill">Accept</button>
+                        <button type="button" class="main-btn offWhiteBg rounded-pill">Decline</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Left Section -->
+    </section>
+    <!-- -------------------------------------- -->
+
+
+    <script src="https://kit.fontawesome.com/d30005137f.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

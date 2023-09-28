@@ -1,0 +1,466 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: var(--offWhite);
+}
+#logoBg{
+    position: fixed;
+    background: url(../imgs/Logo/omar-circle-close-M-black-2.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+}
+p{
+    padding: 0;
+    margin: 0;
+    line-height: 20px;
+}
+input{
+    background: none;
+    color: black;
+    width: 100%;
+    border: none;
+    outline: none;
+    caret-color: var(--secondColor);
+    margin-left: var(--twelvePx);
+}
+input::selection{
+    background: var(--secondColor);
+    color: white;
+}
+input::placeholder{
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+input:focus::placeholder{
+    opacity: 0;
+}
+i{
+    cursor: pointer;
+}
+/* -------------End Global----------------- */
+header{
+    z-index: 999;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: var(--twelvePx);
+}
+header a:first-child:hover{
+    text-decoration: none;
+}
+header .search{
+    background: var(--offWhite);
+    width: 50%;
+}
+header .search i{
+    color: var(--secondColor);
+}
+header button{
+    padding: 5px 10px;
+    margin-right: var(--twelvePx);
+}
+/* --------------------------------------------- */
+section{
+    padding-top: 90px;
+}
+aside .profile-name{
+    padding: 6px 17px;
+}
+aside .profile-name .name{
+    margin-left: 15px;
+}
+.links{
+    margin: var(--twelvePx) 0;
+}
+.links a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    padding: 15px 25px;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.links a:first-child{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.links a:last-child{
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.links a:hover{
+    background: var(--secondAltColor);
+}
+.links a i{
+    margin-right: var(--twelvePx);
+}
+a.active{
+    background: var(--offWhite);
+    color: var(--secondColor);
+}
+a.active i{
+    color: var(--secondColor);
+}
+a.active::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    background: var(--secondColor);
+}
+a.active:first-child:before{
+    top: 0;
+    border-top-left-radius: 12px;
+}
+a.active:last-child:before{
+    bottom: 0;
+    border-bottom-left-radius: 12px;
+}
+.notifications, .messages{
+    position: relative;
+}
+.notifications::after, 
+.messages::after,
+.dropdown .requests::after{
+    font-size: 10px;
+    text-align: center;
+    position: absolute;
+    top: 13px;
+    left: 34px;
+    width: 14px;
+    height: 14px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.notifications::after{
+    content: '+9';
+}
+.messages::after{
+    content: '8';
+}
+.dropdown .requests::after{
+    content: '3';
+    display: none;
+}
+/* ----------------------------------- */
+.stories .story{
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background: var(--i);
+    background-size: cover;
+    background-position: center;
+    width: 80px;
+    height: 135px;
+    flex-direction: column;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.stories .story:hover{
+    opacity: 0.8;
+}
+.stories .story img{
+    max-width: 35%;
+    height: 20%;
+    border: 2px solid var(--secondColor);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+section.container{
+    display: flex;
+    justify-content: center;
+}
+.create-post{
+    background: var(--mainColor);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+/* ----------------------- */
+.posts .post{
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.posts .post .post-img img{
+    max-width: 100%;
+}
+.posts .post .post-img::before{
+    content: "";
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(360deg, rgba(255,255,255,0.5) 0,         rgba(255,255,255,0) 100%);
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 5px black;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+}
+.posts .post .post-img:hover::before{
+    height: 100%;
+    content: "Preview";
+}
+.icons > div i:not(:last-child){
+    margin: 0 5px;
+}
+.posts .post .liked img{
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.posts .post .liked img:not(:first-child){
+    margin-left: -12px;
+}
+.posts .post i{
+    color: black;
+}
+.posts .post p span{
+    font-weight: bold;
+}
+/* ----------------------------------- */
+.right-section .head{
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 2px solid var(--offWhite);
+    cursor: pointer;
+}
+.right-section .head p.active::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: black;
+}
+.switch div.one div.name{
+    display: block;
+}
+.switch div.two{
+    display: none;
+}
+.message, .general{
+    position: relative;
+    padding-left: 8px;
+    z-index: 0;
+    cursor: default;
+    transition: var(--transition);
+}
+.message:not(:last-child),
+.general:not(:last-child){
+    margin-bottom: 10px;
+}
+.message:hover,
+.message:hover p.secondTxtColor,
+.general:hover,
+.general:hover p.secondTxtColor{
+    color: white;
+}
+.right-section .message::before,
+.right-section .general::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    background: var(--secondColor);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.right-section .message:hover::before,
+.right-section .general:hover::before{
+    width: 100%;
+}
+.right-section .message span.online::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 6px;
+    width: 13px;
+    height: 13px;
+    background: green;
+    border: 3px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.right-section .message div p:last-child{
+    font-size: 14px;
+}
+/* ----------------------------------- */
+.requests .request:not(:last-child){
+    margin-bottom: 10px;
+}
+/* ----------------------------------- */
+/* ----------------------------------- */
+.bars span{
+    display: block;
+    width: 22px;
+    height: 3px;
+    background: var(--secondColor);
+}
+.bars span:nth-child(2){
+    margin: 2px 0;
+    width: 80%;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.dropdown .links{
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    z-index: 999;
+}
+.bars span.click{
+    width: 100%;
+}
+/* ----------------------------------- */
+/* ------------------@media----------------- */
+@media (max-width: 992px) { 
+    .hide-mid{
+        display: none;
+    }
+    .main-btn{
+        padding: 5px 10px;
+    }
+    header .search{
+        margin: 0 10px;
+    }
+    aside .profile-name{
+        justify-content: center;
+    }
+    aside .links a{
+        padding: 15px 20px;
+    }
+    aside .name p{
+        display: none;
+    }
+    .notifications::after,
+    .messages::after{
+        top: 12px;
+        left: 29px;
+        width: 12px;
+        height: 12px;
+        font-size: 8px;
+    }
+    .dropdown .requests::after{
+        top: 11px;
+        left: 68px;
+        width: 12px;
+        height: 12px;
+        font-size: 8px;
+    }
+    .dropdown .requests::after{
+        display: block;
+    }
+    .stories .story{
+        margin-right: 5px;
+        font-size: 8px;
+    }
+    .posts .post .liked,
+    .posts .post .comment{
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .block-mobile,
+    .dropdown.block-mobile{
+        display: block;
+    }
+    .hide-mobile{
+        display: none;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .dropdown .links p{
+        display: block;
+    }
+    .notifications::after,
+    .messages::after,
+    .dropdown .requests::after{
+        top: 11px;
+        left: 34px;
+        width: 12px;
+        height: 12px;
+        font-size: 8px;
+    }
+}
+/* ----------------------------------- */
+/* ------------JS Classes------------ */
+.hide, .icons span.hide{
+    display: none;
+}
+.block, .icons span.block{
+    display: inline-block;
+}
+.posts .post i.red{
+    color: red;
+}
+.showLogo{
+    display: none;
+}
+/* ------------JS Classes------------ */

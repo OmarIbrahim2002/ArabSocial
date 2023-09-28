@@ -1,0 +1,78 @@
+:root{
+    --mainColor: white;
+    --secondColor: #6d4bea;
+    --secondAltColor: #5b3cccab;
+    --offWhite: rgb(185 186 193);
+    --transition: 0.3s;
+    --twelvePx: 12px;
+}
+.main-btn{
+    background: var(--secondColor);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 5px 20px;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.transition{
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.main-btn:hover{
+    background: var(--secondAltColor);
+}
+.profile-img{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.search-padding{
+    padding: 10px 15px;
+}
+/* ----------Start Display---------- */
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.align-center{
+    display: flex;
+    align-items: center;
+}
+.flex-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* ----------End Display---------- */
+
+/* ----------Start Colors---------- */
+.mainBg{background: var(--mainColor);}
+.secondBg{background: var(--secondColor);}
+.offWhiteBg{background: var(--offWhite);}
+/* ---------- */
+.secondColor{color: var(--secondColor);}
+.secondTxtColor{color: rgb(45 45 47 / 79%);}
+/* ---------- */
+/* ----------End Colors---------- */
+/* ----------Start Radius---------- */
+.rad-15{
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+/* ----------End Radius---------- */
